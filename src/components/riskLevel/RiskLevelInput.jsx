@@ -18,10 +18,12 @@ class RiskLevelInput extends React.Component {
   render() {
     return (
       <div className="RiskLevelInput">
+        <h3>Select Your Risk Level:</h3>
         <div className="risk-level-value">
           { this.props.riskLevel }
         </div>
         <div className="risk-level-slider">
+          <span>1</span>
           <input
             type="range"
             value={ this.props.riskLevel }
@@ -30,6 +32,7 @@ class RiskLevelInput extends React.Component {
             step={ 1 }
             onChange={ this.handleChange }
           />
+          <span>10</span>
         </div>
       </div>
     );

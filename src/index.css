@@ -4,3 +4,29 @@ body {
   font-family: Montseratt Lato;
   color: #333;
 }
+
+button {
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #2A93D4;
+  border-radius: 2px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px #0f4c7c;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  transition-duration: 0.1s;
+  background-color: #2482bc;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px #0f4c7c;
+}
