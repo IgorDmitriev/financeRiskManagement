@@ -1,0 +1,17 @@
+.RiskLevelInput {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RiskLevelInput .risk-level-value {
+  font-size: 5em;
+  font-weight: 300;
+}
+
+.RiskLevelInput .risk-level-slider input {
+  width: 200px;
+  margin: 20px 0;
+}
