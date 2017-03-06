@@ -1,7 +1,7 @@
 # Finance Risk Management
 
 [Live Demo]:[live-link]
-[live-link]:https://igordmitriev.github.io/lasertank/
+[live-link]:https://igordmitriev.github.io/financeRiskManagement/
 
 PuzzleBall is a computer puzzle game requiring logical thinking to solve a variety of levels. The player must be able to concentrate and think ahead as in playing chess or checkers.
 
