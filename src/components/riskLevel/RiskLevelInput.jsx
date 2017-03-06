@@ -18,7 +18,7 @@ class RiskLevelInput extends React.Component {
   render() {
     return (
       <div className="RiskLevelInput">
-        <h3>Select Your Risk Level:</h3>
+        <h3>My Risk Level:</h3>
         <div className="risk-level-value">
           { this.props.riskLevel }
         </div>

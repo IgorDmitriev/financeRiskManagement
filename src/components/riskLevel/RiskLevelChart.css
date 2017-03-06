@@ -1,0 +1,10 @@
+.RiskLevelChart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RiskLevelChart tspan {
+  font-size: 20px;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { PieChart, Pie, Cell } from 'recharts';
 
+import './RiskLevelChart.css';
+
 const COLORS = {
   cash: '#2D7DBC',
   gold: '#FFD034',
@@ -19,6 +21,7 @@ class RiskLevelChart extends React.Component {
 
     return (
       <div className="RiskLevelChart">
+        <h3>Ideal portfolio:</h3>
         <PieChart width={500} height={320} onMouseEnter={this.onPieEnter}>
           <Pie
             data={data}

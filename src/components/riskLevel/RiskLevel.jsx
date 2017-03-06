@@ -12,7 +12,7 @@ class RiskLevel extends React.Component {
   }
 
   nextStep() {
-    this.props.router.push('/step-2');
+    this.props.router.push('/2');
   }
 
 
