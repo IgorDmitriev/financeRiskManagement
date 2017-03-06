@@ -1,7 +1,7 @@
 # Finance Risk Management
 
-[Live Demo]:[live-link]
-[live-link]:https://igordmitriev.github.io/financeRiskManagement/
+[Live Demo]
+[Live Demo]:https://igordmitriev.github.io/financeRiskManagement/
 
 To run project in development environment:
 

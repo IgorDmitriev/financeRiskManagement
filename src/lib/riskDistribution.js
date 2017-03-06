@@ -100,8 +100,6 @@ export const getRecommendedDistribution =
 
 export const calculateTransactions =
   (moneyInCategories, recommendedDistribution) => {
-    console.log('current distrib', moneyInCategories);
-    console.log(recommendedDistribution);
     const withdrawals = [];
     const deposits = [];
     let amount;
@@ -116,7 +114,6 @@ export const calculateTransactions =
         }
       }
     }
-    console.log(withdrawals, deposits);
+    
     return { withdrawals, deposits };
-
   };

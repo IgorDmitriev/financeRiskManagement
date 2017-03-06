@@ -5,10 +5,6 @@ import MoneyRecommendations from './MoneyRecommendations';
 import './MoneyControl.css';
 
 class MoneyControl extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const {
       moneyInCategories,
