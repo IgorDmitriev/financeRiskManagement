@@ -11,7 +11,13 @@ import {
 const initialState = {
   riskLevel: 1,
   categoriesDistribution: getCategoriesDistribution(1),
-  moneyInCategories: {},
+  moneyInCategories: {
+    cash: 0,
+    bonds: 0,
+    gold: 0,
+    options: 0,
+    stocks: 0
+  },
   recommendedDistribution: {},
   transactions: []
 };
@@ -27,7 +33,9 @@ const riskReducer = (state = initialState, action) => {
       return ({
         ...state,
         riskLevel,
-        categoriesDistribution
+        categoriesDistribution,
+        transactions: [],
+        recommendedDistribution: {}
       });
     case CALCULATE_TRANSACTIONS:
       const moneyInCategories = action.moneyInCategories;

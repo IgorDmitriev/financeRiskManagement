@@ -5,6 +5,25 @@ body {
   color: #333;
 }
 
+h1, h3 {
+  margin: 20px 0;
+  padding: 0px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 0px;
+}
+
 button {
   border: none;
   outline: none;

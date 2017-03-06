@@ -1,7 +1,8 @@
 import React from 'react';
 import MoneyInput from './MoneyInput';
+import MoneyRecommendations from './MoneyRecommendations';
 
-// import './MoneyControl.css';
+import './MoneyControl.css';
 
 class MoneyControl extends React.Component {
   constructor(props) {
@@ -9,9 +10,22 @@ class MoneyControl extends React.Component {
   }
 
   render() {
+    const {
+      moneyInCategories,
+      transactions,
+      recommendedDistribution,
+      calculateTransactions } = this.props;
     return (
       <div className="MoneyControl">
-        <MoneyInput calculateTransactions={ this.props.calculateTransactions }/>
+        <MoneyInput
+          moneyInCategories={ moneyInCategories }
+          calculateTransactions={ calculateTransactions }
+          goBack={ () => this.props.router.push('/') }
+        />
+        <MoneyRecommendations
+          transactions={ transactions }
+          recommendedDistribution={ recommendedDistribution }
+        />
       </div>
     );
   }

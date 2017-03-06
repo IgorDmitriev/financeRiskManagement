@@ -1,7 +1,8 @@
 import React from 'react';
+import './Input.css';
 
 const Input = ({ name, value, onChange }) => (
-  <div className="Input">
+  <div className={ `Input ${name}`}>
     <label htmlFor={ name }>{ name }</label>
     <input
       id={ name }

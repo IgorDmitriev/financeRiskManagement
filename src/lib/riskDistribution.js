@@ -104,15 +104,15 @@ export const calculateTransactions =
     console.log(recommendedDistribution);
     const withdrawals = [];
     const deposits = [];
-    let balance;
+    let amount;
 
     for (let category in moneyInCategories) {
       if (moneyInCategories.hasOwnProperty(category)) {
-        balance = recommendedDistribution[category] - moneyInCategories[category];
-        if (balance < 0) {
-          withdrawals.push({ category, balance });
-        } else if (balance > 0) {
-          deposits.push({ category, balance });
+        amount = recommendedDistribution[category] - moneyInCategories[category];
+        if (amount < 0) {
+          withdrawals.push({ category, amount });
+        } else if (amount > 0) {
+          deposits.push({ category, amount });
         }
       }
     }

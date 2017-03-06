@@ -1,22 +1,19 @@
 import React from 'react';
 import Input from './Input';
+import _ from 'lodash';
+
+import './MoneyInput.css';
 
 class MoneyInput extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      cash: 0,
-      bonds: 0,
-      gold: 0,
-      options: 0,
-      stocks: 0
-    };
+    this.state = {...this.props.moneyInCategories};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+  
   handleChange(e) {
     const target = e.target;
     const name = target.name;
@@ -36,13 +33,19 @@ class MoneyInput extends React.Component {
   }
 
   renderInputs() {
-    return Object.keys(this.state).map( (category, idx) => (
+    const inputs = Object.keys(this.state).map( (category, idx) => (
       <Input
         key={ category }
         name={ category }
         value={ this.state[category] }
         onChange={ this.handleChange } />
     ));
+
+    return (
+      <div className="inputs">
+        { inputs }
+      </div>
+    );
   }
 
   render() {
@@ -50,10 +53,16 @@ class MoneyInput extends React.Component {
       <div className="MoneyInput">
         <h3>My portolio:</h3>
         { this.renderInputs() }
-        <button
-          onClick={ this.handleSubmit }>
-          Calculate
-        </button>
+        <div className="buttons">
+          <button
+            onClick={ this.props.goBack }>
+            Change Risk Level
+          </button>
+          <button
+            onClick={ this.handleSubmit }>
+            Calculate
+          </button>
+        </div>
       </div>
     );
   }

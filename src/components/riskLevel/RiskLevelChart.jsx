@@ -3,13 +3,7 @@ import { PieChart, Pie, Cell } from 'recharts';
 
 import './RiskLevelChart.css';
 
-const COLORS = {
-  cash: '#2D7DBC',
-  gold: '#FFD034',
-  bonds: '#DB3A34',
-  options: '#4A4A4A',
-  stocks: '#037365'
-};
+import { COLORS } from '../../lib/colors';
 
 class RiskLevelChart extends React.Component {
   constructor(props) {
