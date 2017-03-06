@@ -64,7 +64,6 @@ class MoneyRecommendations extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     if (this.props.transactions.length === 0) return null;
     return (
       <div className="MoneyRecommendations">
