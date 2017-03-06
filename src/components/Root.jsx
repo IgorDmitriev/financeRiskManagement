@@ -9,6 +9,7 @@ import {
 // components
 import App from './App';
 import RiskLevel from './riskLevel/RiskLevelContainer';
+import MoneyControl from './moneyControl/MoneyControlContainer';
 
 const Root = ({ store }) => {
 
@@ -17,7 +18,7 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
           <IndexRoute component={ RiskLevel } />
-          <Route path="/2" component={ RiskLevel } />
+          <Route path="/2" component={ MoneyControl } />
         </Route>
       </Router>
     </Provider>

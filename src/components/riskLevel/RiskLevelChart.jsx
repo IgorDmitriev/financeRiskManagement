@@ -32,7 +32,7 @@ class RiskLevelChart extends React.Component {
             fill="#8884d8"
             stroke="transparent"
             paddingAngle={5}
-            label={ el => el.percent * 100 + '% ' + el.name}
+            label={ el => parseInt(el.percent * 100) + '% ' + el.name}
             labelLine={false}
             isAnimationActive={ false }
           >
